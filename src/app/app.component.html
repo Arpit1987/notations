@@ -1,0 +1,88 @@
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+  <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<title>arpit</title>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+
+
+<div class="container">
+
+  <!-- Jumbotron Header -->
+  <header class="jumbotron my-4">
+    <h2 class="display-8">Welcome to Notations</h2>
+    <p class="lead">Choose the Below options to Navigate to different Page</p>        
+  </header>
+
+  <!-- Page Features --><div style="float: right"><a href="#" (click) = "onClick('0')" style="color: black"><h4>Home</h4></a></div>
+  <div class="row text-center">
+
+    <div class="container">
+      <div *ngIf="pageroute==0" class="row">
+        <div class="col-lg-12">
+          <p>
+            <a href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "onClick('1')">               
+                <b>CRIS</b>
+            </a>&nbsp;
+            <a href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "onClick('2')">               
+              <b>Ensemble</b>
+          </a>&nbsp;
+          <a href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "onClick('2')">               
+            <b>Level-3 </b>
+        </a>
+            
+          </p>
+        </div>
+      </div> 
+      <div *ngIf="pageroute==1" class="row">
+        <div class="col-lg-12">
+          
+            <a  id="boss" href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "myfunc('1')">               
+                <b>BOSS/CARS</b>
+            </a>&nbsp;
+            <a id="lmos" href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "myfunc('2')">               
+              <b>LMOS</b>
+          </a>&nbsp;
+          <a id="wfa" href="#" class="btn btn-sq-lg btn-primary" style="width:200px;height: 150px;text-align: center;vertical-align: middle;line-height: 130px" (click) = "myfunc('3')">               
+            <b>WFA/DO  </b>
+        </a>
+            
+          
+        </div>
+        <div class="col-lg-12">
+          <div class="checkbox" >
+            <label style="width:200px"><input type="checkbox" value=""></label>
+            <label style="width:200px"><input type="checkbox" value=""></label>
+            <label style="width:200px"><input type="checkbox" value=""></label>
+          </div>
+          
+
+        </div>
+        <div class="col-lg-12">
+            <div class="form-group"><input type="text" style="width:200px" placeholder="BTN">
+              &nbsp;<button type="button" class="btn btn-success">Search</button>
+ 
+        </div>
+        
+	    </div>    
+     
+
+  </div>
+  <div *ngIf="pageroute==2" class="row">
+      <div class="col-lg-12">
+        
+          <h1>This page is under construction.</h1>
+          
+        
+      </div>
+    </div>    
+  <!-- /.row -->
+</div>
+
